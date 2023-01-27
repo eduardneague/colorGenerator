@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main--container {
+  margin-top: 2rem;
+  padding: .5rem;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 2rem;
+  background: white;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .3);
+}
+
+.flex--wrapper {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.color--input {
+  width: 4rem;
+  height: 2.5rem;
+  border: none;
+  box-shadow: 2px 2px 10px .5px rgba(155, 155, 155, .5);
+}
+
+.color--dropdown {
+  font-family: Poppins;
+  width: 15rem;
+  height: 2.5rem;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: 2px 2px 10px .5px rgba(155, 155, 155, .5);
+  border-radius: .3rem;
+}
+
+.color--submit {
+  height: 2.5rem;
+  font-family: poppins;
+  border: none;
+  border-radius: .3rem;
+  background: white;
+  box-shadow: 2px 2px 10px .5px rgba(155, 155, 155, .5);
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: .2s;
+}
+
+.color--submit:hover {
+  background: #C429CF;
+  color: white;
+}
+
+.color--component {
+  height: 30rem;
+  background: grey;
+}
+
+.color--container {
+  display: flex;
+  flex-direction: row;
+}
+
+.color--component--container {
+  cursor: pointer;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.color--hexcode {
+  font-family: poppins;
+  font-size: 1.1rem;
+}
+
+.title--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  width: 30rem;
+  height: 5rem;
+  background: white;
+  margin-left: 5rem;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .3);
+}
+
+.title {
+  background: #09DEB3;
+  background: linear-gradient(to right, #09DEB3 26%, #C429CF 62%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.placeholder--title {
+  max-width: 25rem;
+  font-size: 2rem;
+  color: grey;
+  font-family: poppins;
+  line-height: 3rem;
+}
+
+.placeholder--wrapper {
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder--based {
+  position: absolute;
+  max-width: 25rem;
+  font-size: 1.rem;
+  color: grey;
+  font-family: poppins;
+  line-height: 3rem;
+  top: 100%;
+}
+
+.placeholder--custom--color a {
+  color: rgb(237, 35, 255);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.placeholder--title2 {
+  max-width: 25rem;
+  font-size: 1rem;
+  color: grey;
+  font-family: poppins;
+  line-height: 1.5rem;  
+  margin-top: 1rem;
+}
