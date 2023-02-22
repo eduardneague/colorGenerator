@@ -27,6 +27,8 @@ function App() {
     getColors();
   }
 
+  // This is the new test_branch thing, I simply want to test some stuff in here.
+
   // copy to clipboard functionality
 
   function copyColor(hexValue) {
@@ -43,6 +45,7 @@ function App() {
     fetch(`${baseURL}?hex=${colorInput}&mode=${selectInput}&count=5`)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data)
         setColorArray(data.colors);
       });
   }
