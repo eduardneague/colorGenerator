@@ -9,10 +9,9 @@ import Color from "../components/Color";
 
 function App() {
 
-  const [colorInput, setColorInput] = useState("#00000");
+  const [colorInput, setColorInput] = useState("00000");
   const [selectInput, setSelectInput] = useState("monochrome");
   const [colorArray, setColorArray] = useState([]);
-  const [text, setText] = useState("")
 
   function handleColorChange(event) {
     const color = event.target.value;
@@ -21,10 +20,6 @@ function App() {
 
   function handleSelectChange(event) {
     setSelectInput(event.target.value);
-  }
-
-  function handleButtonClick() {
-    getColors();
   }
 
   // copy to clipboard functionality
@@ -43,7 +38,7 @@ function App() {
     fetch(`${baseURL}?hex=${colorInput}&mode=${selectInput}&count=5`)
       .then((response) => response.json())
       .then((data) => {
-        setColorArray(data.colors);
+        setColorArray(data.colors)
       });
   }
 
@@ -69,7 +64,7 @@ function App() {
         <Navbar
           handleColorChange={handleColorChange}
           handleSelectChange={handleSelectChange}
-          handleButtonClick={handleButtonClick}
+          handleButtonClick={getColors}
         />
 
     {colorArray.length === 0 ? 
